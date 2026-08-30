@@ -4,92 +4,114 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cansin Yildiz</title>
-<meta name="description" content="Cansin Yildiz is a Staff Software Engineer in San Francisco working on AI platforms and full-stack systems.">
+<meta name="description" content="Cansin Yildiz. Staff Software Engineer in San Francisco. AI platforms and full-stack systems.">
 <style>
   :root {
-    --bg: #fdfdfb;
-    --ink: #1a1a1a;
-    --muted: #6b6b66;
-    --line: #e4e4de;
-    --accent: #0b57d0;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #131312;
-      --ink: #ececea;
-      --muted: #9a9a94;
-      --line: #2c2c2a;
-      --accent: #8ab4f8;
-    }
+    --bg: #0b0e14;
+    --panel: #10141d;
+    --fg: #c7d0d9;
+    --dim: #6e7a87;
+    --green: #7ee787;
+    --cyan: #79c0ff;
+    --amber: #e3b341;
+    --line: #1d2430;
   }
   * { box-sizing: border-box; }
+  html, body { margin: 0; }
   body {
-    margin: 0;
     background: var(--bg);
-    color: var(--ink);
-    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--fg);
+    font: 15px/1.7 ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas,
+      "Liberation Mono", monospace;
     -webkit-font-smoothing: antialiased;
+    padding: 2.5rem 1rem 4rem;
   }
-  main {
-    max-width: 40rem;
+  ::selection { background: #1f6feb66; }
+  .term {
+    max-width: 44rem;
     margin: 0 auto;
-    padding: 5rem 1.5rem 4rem;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
   }
-  h1 {
-    font-size: 1.9rem;
-    letter-spacing: -0.015em;
-    margin: 0 0 0.25rem;
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.6rem 0.9rem;
+    border-bottom: 1px solid var(--line);
   }
-  .role {
-    color: var(--muted);
-    margin: 0 0 2.5rem;
+  .dot { width: 11px; height: 11px; border-radius: 50%; }
+  .dot:nth-child(1) { background: #f85149; }
+  .dot:nth-child(2) { background: #e3b341; }
+  .dot:nth-child(3) { background: #3fb950; }
+  .bar span { margin-left: 0.5rem; color: var(--dim); font-size: 0.85em; }
+  main { padding: 1.4rem 1.5rem 1.8rem; }
+  .ps1 { color: var(--green); }
+  .cmd { color: var(--fg); font-weight: 600; }
+  .out { color: var(--fg); margin: 0.35rem 0 1.6rem; }
+  .out p { margin: 0 0 0.9rem; }
+  .k { color: var(--cyan); }
+  .c { color: var(--dim); }
+  .y { color: var(--amber); }
+  a { color: var(--cyan); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .links a { margin-right: 1.6rem; }
+  .cursor {
+    display: inline-block;
+    width: 0.6em; height: 1.15em;
+    background: var(--green);
+    vertical-align: text-bottom;
+    animation: blink 1.1s steps(1) infinite;
   }
-  p { margin: 0 0 1.25rem; }
-  strong { font-weight: 600; }
-  .links {
-    margin-top: 2.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--line);
-  }
-  .links a {
-    color: var(--accent);
-    text-decoration: none;
-    margin-right: 1.5rem;
-  }
-  .links a:hover { text-decoration: underline; }
-  footer {
-    margin-top: 3rem;
-    color: var(--muted);
-    font-size: 0.9rem;
-  }
+  @keyframes blink { 50% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
 </style>
 </head>
 <body>
-<main>
-  <h1>Cansin Yildiz</h1>
-  <p class="role">Staff Software Engineer, San Francisco. AI platforms and full-stack systems.</p>
-
-  <p>Fifteen years shipping production systems. Most recently the technical steward of
-  <strong>Abridge</strong>'s core medical-encounter service: Temporal workflows turning
-  clinical audio into structured notes, in TypeScript, Nest.js, and Kubernetes.</p>
-
-  <p>Before that, engineer #3 at <strong>Udemy</strong>, where he led the two-year
-  PHP to Python/Django monolith migration and the company-wide jQuery to React
-  re-architecture, and founding Head of Engineering at <strong>Jasper Health</strong>,
-  building a cancer-care navigation platform from zero to 10K+ users.</p>
-
-  <p>Currently building self-hosted AI infrastructure: MCP (Model Context Protocol)
-  servers, model serving with vLLM and Ollama, speech pipelines, and agents on the
-  Claude Agent SDK.</p>
-
-  <div class="links">
-    <a href="https://www.linkedin.com/in/cansin">LinkedIn</a>
-    <a href="https://github.com/cansin">GitHub</a>
-    <a href="https://medium.com/@cansinyildiz">Medium</a>
-    <a href="mailto:cansinyildiz@gmail.com">Email</a>
+<div class="term">
+  <div class="bar" aria-hidden="true">
+    <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    <span>cansin@sf: ~</span>
   </div>
+  <main>
+    <div><span class="ps1">cansin@sf:~$</span> <span class="cmd">whoami</span></div>
+    <div class="out">
+      <p><span class="k">Cansin Yildiz</span> · Staff Software Engineer · San Francisco<br>
+      AI platforms and full-stack systems. Fifteen years shipping production code.</p>
+    </div>
 
-  <footer>San Francisco, CA</footer>
-</main>
+    <div><span class="ps1">cansin@sf:~$</span> <span class="cmd">cat now.txt</span></div>
+    <div class="out">
+      <p>Building self-hosted AI infrastructure: <span class="k">MCP servers</span>,
+      model serving with <span class="k">vLLM</span> and <span class="k">Ollama</span>,
+      speech pipelines, and agents on the <span class="k">Claude Agent SDK</span>.</p>
+    </div>
+
+    <div><span class="ps1">cansin@sf:~$</span> <span class="cmd">tail -n3 career.log</span></div>
+    <div class="out">
+      <p><span class="y">[abridge]</span> technical steward of the core medical-encounter
+      service behind its ambient clinical documentation: Temporal workflows turning
+      clinical audio into structured notes <span class="c"># TypeScript, Nest.js, Kubernetes</span></p>
+      <p><span class="y">[udemy]</span> engineer #3. led the 2-year PHP to Python/Django
+      monolith migration (88% test coverage, 60-80+ engineers onboarded) and the
+      company-wide jQuery to React + MobX re-architecture</p>
+      <p><span class="y">[jasper]</span> founding Head of Engineering: greenfield
+      React/Next.js + GraphQL + Django stack, solo to a team of five, 10K+ users in
+      year one powering MSK Direct</p>
+    </div>
+
+    <div><span class="ps1">cansin@sf:~$</span> <span class="cmd">ls links/</span></div>
+    <div class="out links">
+      <a href="https://www.linkedin.com/in/cansin">linkedin</a>
+      <a href="https://github.com/cansin">github</a>
+      <a href="https://medium.com/@cansinyildiz">medium</a>
+      <a href="mailto:cansinyildiz@gmail.com">email</a>
+    </div>
+
+    <div><span class="ps1">cansin@sf:~$</span> <span class="cursor"></span></div>
+  </main>
+</div>
 </body>
 </html>
