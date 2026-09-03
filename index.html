@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>Cansin Yildiz | Staff Software Engineer, San Francisco</title>
-<meta name="description" content="Cansin Yildiz is a Staff Software Engineer in San Francisco with fifteen years of production software: engineer #3 at Udemy, founding Head of Engineering at Jasper Health, Staff Engineer on Abridge's Foundations team. Builds the platforms AI products run on.">
+<meta name="description" content="Cansin Yildiz is a Staff Software Engineer in San Francisco. Fifteen years building and running production systems: engineer #3 at Udemy, founding Head of Engineering at Jasper Health, Staff Software Engineer on Abridge's Foundations team.">
 <link rel="canonical" href="https://cansin.dev/">
 <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA2NCA2NCc+PHJlY3Qgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyByeD0nMTQnIGZpbGw9JyMxZTVhNDYnLz48dGV4dCB4PSczMicgeT0nNDQnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtZmFtaWx5PSdIZWx2ZXRpY2EsQXJpYWwsc2Fucy1zZXJpZicgZm9udC1zaXplPSczNicgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nI2ZmZic+QzwvdGV4dD48L3N2Zz4=">
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="cansin.dev">
 <meta property="og:url" content="https://cansin.dev/">
 <meta property="og:title" content="Cansin Yildiz, Staff Software Engineer in San Francisco">
-<meta property="og:description" content="Fifteen years of production software: engineer #3 at Udemy, founding Head of Engineering at Jasper Health, Staff Engineer on Abridge's Foundations team. Builds the platforms AI products run on.">
+<meta property="og:description" content="Fifteen years building and running production systems: engineer #3 at Udemy, founding Head of Engineering at Jasper Health, Staff Software Engineer on Abridge's Foundations team.">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -163,56 +163,8 @@
   }
   .measure { max-width: 40rem; }
 
-  /* Selected work: From / To */
-  .shift { padding: 1.75rem 0; border-bottom: 1px solid var(--rule); }
-  .shift:last-child { border-bottom: 0; padding-bottom: 0.25rem; }
-  .shift header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.25rem 0.9rem;
-    margin: 0 0 1.1rem;
-  }
-  .shift header strong {
-    font-family: var(--display);
-    font-weight: 700;
-    font-size: 1.25rem;
-    letter-spacing: -0.015em;
-  }
-  .shift header .title { color: var(--muted); font-size: 0.95rem; }
-  .shift header time {
-    color: var(--muted);
-    font-size: 0.875rem;
-    font-variant-numeric: tabular-nums;
-    margin-left: auto;
-  }
-  .fromto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    margin: 0;
-  }
-  .fromto > div { padding-right: 2.25rem; }
-  .fromto > div + div {
-    padding-right: 0;
-    padding-left: 2.25rem;
-    border-left: 1px solid var(--rule);
-  }
-  .fromto dt {
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin: 0 0 0.4rem;
-  }
-  .fromto > div + div dt { color: var(--pine); }
-  .fromto dd { margin: 0; font-size: 1rem; line-height: 1.6; }
-  .stack { margin: 1.1rem 0 0; color: var(--muted); font-size: 0.8125rem; }
+  .stack { color: var(--muted); font-size: 0.8125rem; }
   .stack span { font-weight: 600; margin-right: 0.35rem; }
-
-  /* Now */
-  .now p { margin: 1.25rem 0 0; }
 
   /* Experience */
   .timeline { list-style: none; margin: 0; padding: 0; }
@@ -220,7 +172,7 @@
     display: grid;
     grid-template-columns: 9rem 1fr;
     gap: 0.2rem 1.5rem;
-    padding: 1.15rem 0;
+    padding: 1.4rem 0;
     border-bottom: 1px solid var(--rule);
   }
   .timeline li:last-child { border-bottom: 0; }
@@ -232,7 +184,8 @@
   }
   .timeline strong { font-weight: 600; }
   .timeline .title { color: var(--muted); }
-  .timeline p { margin: 0.3rem 0 0; font-size: 0.95rem; }
+  .timeline p { margin: 0.4rem 0 0; font-size: 0.95rem; max-width: 40rem; }
+  .timeline .stack { margin-top: 0.6rem; }
 
   /* Education */
   .edu { list-style: none; margin: 0; padding: 0; }
@@ -266,10 +219,6 @@
 
   @media (max-width: 640px) {
     .proof { grid-template-columns: repeat(2, 1fr); }
-    .fromto { grid-template-columns: 1fr; gap: 1.1rem; }
-    .fromto > div { padding-right: 0; }
-    .fromto > div + div { padding-left: 0; border-left: 0; }
-    .shift header time { margin-left: 0; flex-basis: 100%; }
     .timeline li { grid-template-columns: 1fr; gap: 0.1rem; }
     .when { padding-top: 0; }
   }
@@ -280,9 +229,10 @@
   <header class="hero">
     <h1>Cansin Yildiz</h1>
     <p class="role">Staff Software Engineer, San Francisco</p>
-    <p class="thesis">I build the platforms AI products run on, and rebuild the ones companies outgrow.</p>
-    <p class="lede">Fifteen years of production software: engineer #3 at Udemy, founding Head of
-    Engineering at Jasper Health, and Staff Software Engineer on Abridge's Foundations team.</p>
+    <p class="thesis">Fifteen years building and running production systems, most recently the platforms behind AI products.</p>
+    <p class="lede">Engineer #3 at Udemy, founding Head of Engineering at Jasper Health, and Staff
+    Software Engineer on Abridge's Foundations team. Currently building self-hosted AI
+    infrastructure.</p>
     <div class="actions">
       <a class="btn primary" href="mailto:cansinyildiz@gmail.com">Email me</a>
       <a class="btn" href="https://www.linkedin.com/in/cansin">Connect on LinkedIn</a>
@@ -292,84 +242,9 @@
   <ul class="proof" aria-label="At a glance">
     <li><strong>15 years</strong><span>shipping production software</span></li>
     <li><strong>#3</strong><span>engineer hired at Udemy</span></li>
-    <li><strong>2</strong><span>company-wide platform rewrites led</span></li>
-    <li><strong>10K+</strong><span>users in year one at Jasper Health</span></li>
+    <li><strong>2</strong><span>company-wide platform rewrites led at Udemy</span></li>
+    <li><strong>5 engineers</strong><span>team built from scratch at Jasper Health</span></li>
   </ul>
-
-  <section aria-labelledby="work">
-    <h2 id="work">Selected work</h2>
-
-    <article class="shift">
-      <header>
-        <strong>Abridge</strong>
-        <span class="title">Staff Software Engineer, Foundations</span>
-        <time>2024 - 2025</time>
-      </header>
-      <dl class="fromto">
-        <div>
-          <dt>From</dt>
-          <dd>Audio recorded during a patient visit.</dd>
-        </div>
-        <div>
-          <dt>To</dt>
-          <dd>A structured clinical note, produced by the pipeline I stewarded in production:
-          Abridge's core medical-encounter service, from audio ingestion through transcription
-          to note generation.</dd>
-        </div>
-      </dl>
-      <p class="stack"><span>Built with</span>Temporal, TypeScript, Nest.js, Kubernetes, PostgreSQL</p>
-    </article>
-
-    <article class="shift">
-      <header>
-        <strong>Udemy</strong>
-        <span class="title">Engineer #3 to Software Architect</span>
-        <time>2011 - 2019</time>
-      </header>
-      <dl class="fromto">
-        <div>
-          <dt>From</dt>
-          <dd>An in-house PHP monolith and a jQuery front end, maintained by a team of about
-          fourteen.</dd>
-        </div>
-        <div>
-          <dt>To</dt>
-          <dd>Python/Django and React, each migrated incrementally over two years while the
-          product kept shipping: 88% test coverage, 36% less code, and 60-80+ new engineers
-          onboarded onto the new stack.</dd>
-        </div>
-      </dl>
-      <p class="stack"><span>Built with</span>Python, Django, React, MobX, Webpack</p>
-    </article>
-
-    <article class="shift">
-      <header>
-        <strong>Jasper Health</strong>
-        <span class="title">Founding Head of Engineering</span>
-        <time>2020 - 2021</time>
-      </header>
-      <dl class="fromto">
-        <div>
-          <dt>From</dt>
-          <dd>A concept for cancer-care navigation and a single engineer: me.</dd>
-        </div>
-        <div>
-          <dt>To</dt>
-          <dd>A live platform with 10K+ users in its first year, powering MSK Direct at Memorial
-          Sloan Kettering, and an engineering team grown from one to five.</dd>
-        </div>
-      </dl>
-      <p class="stack"><span>Built with</span>React, Next.js, GraphQL, Django, PostgreSQL</p>
-    </article>
-  </section>
-
-  <section class="now" aria-labelledby="now">
-    <h2 id="now">Now</h2>
-    <p class="measure">Since late 2025 I have been building self-hosted AI infrastructure: the
-    plumbing that lets a company run language models and agents on its own hardware. In practice
-    that means MCP (Model Context Protocol) servers, model serving with vLLM and Ollama, speech
-    pipelines, and agents built on the Claude Agent SDK.</p>
-  </section>
 
   <section aria-labelledby="experience">
     <h2 id="experience">Experience</h2>
@@ -378,7 +253,10 @@
         <span class="when">2025 - Present</span>
         <div>
           <strong>Independent Engineer</strong> <span class="title">AI infrastructure and tooling</span>
-          <p>Self-hosted model serving, MCP servers, and agents on the Claude Agent SDK.</p>
+          <p>Building self-hosted AI infrastructure: the plumbing that lets a company run language
+          models and agents on its own hardware. In practice that means MCP (Model Context
+          Protocol) servers, model serving with vLLM and Ollama, speech pipelines, and agents
+          built on the Claude Agent SDK.</p>
         </div>
       </li>
       <li>
@@ -386,37 +264,52 @@
         <div>
           <strong>Abridge</strong> <span class="title">Staff Software Engineer, Foundations</span>
           <p>Technical steward of the core medical-encounter service behind Abridge's ambient
-          clinical documentation.</p>
+          clinical documentation: the Temporal workflows that orchestrate audio ingestion,
+          transcript processing, and note generation. I ran its production operation, made the
+          architecture decisions for feature integrations, and managed its Kubernetes
+          deployments.</p>
+          <p class="stack"><span>Stack</span>Temporal, TypeScript, Nest.js, Kubernetes, PostgreSQL</p>
         </div>
       </li>
       <li>
         <span class="when">2024</span>
         <div>
           <strong>Woven (Everyday Agents)</strong> <span class="title">Founding Staff Software Engineer</span>
-          <p>Web and mobile authentication and onboarding for an AI-native travel agent.</p>
+          <p>Built web and mobile (React Native) authentication and onboarding flows for an
+          AI-native travel agent.</p>
+          <p class="stack"><span>Stack</span>React, React Native, Python, Postgres, OpenAI</p>
         </div>
       </li>
       <li>
         <span class="when">2022 - 2023</span>
         <div>
           <strong>Collective</strong> <span class="title">Staff Software Engineer, promoted to Senior Engineering Manager</span>
-          <p>Led the platform team through SOC 2 pre-compliance, a 2FA rollout, and an
-          auth-system overhaul.</p>
+          <p>Promoted to Senior Engineering Manager of the platform team within about six months,
+          after delivering front-end refactors, Django/DRF standards, and CI/CD pipelines. Ran the
+          team through SOC 2 pre-compliance, a 2FA rollout, and an auth-system overhaul.</p>
         </div>
       </li>
       <li>
         <span class="when">2020 - 2021</span>
         <div>
           <strong>Jasper Health (Redesign Health)</strong> <span class="title">Founding Head of Engineering</span>
-          <p>First engineering hire: built the greenfield stack solo, then grew the team to five.</p>
+          <p>First engineering hire at a cancer-care navigation startup. Built the greenfield
+          stack solo, then hired and grew the team to five engineers. The platform reached 10K+
+          users in its first year and powered MSK Direct at Memorial Sloan Kettering.</p>
+          <p class="stack"><span>Stack</span>React, Next.js, GraphQL, Django, PostgreSQL</p>
         </div>
       </li>
       <li>
         <span class="when">2011 - 2019</span>
         <div>
           <strong>Udemy</strong> <span class="title">Founding Software Engineer #3 to Software Architect</span>
-          <p>Led both company-wide platform rewrites; managed the student and instructor
-          experience teams as Senior Engineering Manager.</p>
+          <p>Joined as engineer #3. Led the two-year incremental migration of the PHP monolith to
+          Python/Django, staffed by 30% of engineering: it ended with 88% test coverage and 36%
+          less code while features kept shipping, and 60-80+ new engineers were onboarded onto the
+          new stack. Then led the company-wide jQuery/Angular to React + MobX re-architecture,
+          coordinating all engineering teams over about two years. Managed the student and
+          instructor experience teams as Senior Engineering Manager from 2014 to 2016.</p>
+          <p class="stack"><span>Stack</span>Python, Django, React, MobX, Webpack</p>
         </div>
       </li>
     </ol>
