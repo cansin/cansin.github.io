@@ -137,7 +137,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem 1.5rem;
   }
-  .proof li { display: grid; gap: 0.2rem; }
+  .proof li { display: grid; gap: 0.2rem; align-content: start; }
   .proof strong {
     font-family: var(--display);
     font-weight: 700;
@@ -163,16 +163,16 @@
   }
   .measure { max-width: 40rem; }
 
-  .stack { color: var(--muted); font-size: 0.8125rem; }
-  .stack span { font-weight: 600; margin-right: 0.35rem; }
+  /* Now */
+  .now p { margin: 1.25rem 0 0; }
 
-  /* Experience */
+  /* Where I have been */
   .timeline { list-style: none; margin: 0; padding: 0; }
   .timeline li {
     display: grid;
     grid-template-columns: 9rem 1fr;
-    gap: 0.2rem 1.5rem;
-    padding: 1.4rem 0;
+    gap: 0.1rem 1.5rem;
+    padding: 0.8rem 0;
     border-bottom: 1px solid var(--rule);
   }
   .timeline li:last-child { border-bottom: 0; }
@@ -180,18 +180,9 @@
     color: var(--muted);
     font-size: 0.9rem;
     font-variant-numeric: tabular-nums;
-    padding-top: 0.15rem;
+    padding-top: 0.1rem;
   }
   .timeline strong { font-weight: 600; }
-  .timeline .title { color: var(--muted); }
-  .timeline p { margin: 0.4rem 0 0; font-size: 0.95rem; max-width: 40rem; }
-  .timeline .stack { margin-top: 0.6rem; }
-
-  /* Education */
-  .edu { list-style: none; margin: 0; padding: 0; }
-  .edu li { padding: 0.9rem 0; border-bottom: 1px solid var(--rule); }
-  .edu li:last-child { border-bottom: 0; }
-  .edu span { color: var(--muted); font-size: 0.95rem; }
 
   /* Contact */
   .contact .big {
@@ -241,87 +232,28 @@
 
   <ul class="proof" aria-label="At a glance">
     <li><strong>15 years</strong><span>shipping production software</span></li>
-    <li><strong>#3</strong><span>engineer hired at Udemy</span></li>
-    <li><strong>2</strong><span>company-wide platform rewrites led at Udemy</span></li>
-    <li><strong>5 engineers</strong><span>team built from scratch at Jasper Health</span></li>
+    <li><strong>Udemy #3</strong><span>third engineer hired, nearly eight years to Software Architect</span></li>
+    <li><strong>Abridge</strong><span>Staff Software Engineer, Foundations team, ambient clinical AI</span></li>
+    <li><strong>Jasper Health</strong><span>first engineering hire, built the stack solo, grew the team to five</span></li>
   </ul>
 
-  <section aria-labelledby="experience">
-    <h2 id="experience">Experience</h2>
-    <ol class="timeline">
-      <li>
-        <span class="when">2025 - Present</span>
-        <div>
-          <strong>Independent Engineer</strong> <span class="title">AI infrastructure and tooling</span>
-          <p>Building self-hosted AI infrastructure: the plumbing that lets a company run language
-          models and agents on its own hardware. In practice that means MCP (Model Context
-          Protocol) servers, model serving with vLLM and Ollama, speech pipelines, and agents
-          built on the Claude Agent SDK.</p>
-        </div>
-      </li>
-      <li>
-        <span class="when">2024 - 2025</span>
-        <div>
-          <strong>Abridge</strong> <span class="title">Staff Software Engineer, Foundations</span>
-          <p>Technical steward of the core medical-encounter service behind Abridge's ambient
-          clinical documentation: the Temporal workflows that orchestrate audio ingestion,
-          transcript processing, and note generation. I ran its production operation, made the
-          architecture decisions for feature integrations, and managed its Kubernetes
-          deployments.</p>
-          <p class="stack"><span>Stack</span>Temporal, TypeScript, Nest.js, Kubernetes, PostgreSQL</p>
-        </div>
-      </li>
-      <li>
-        <span class="when">2024</span>
-        <div>
-          <strong>Woven (Everyday Agents)</strong> <span class="title">Founding Staff Software Engineer</span>
-          <p>Built web and mobile (React Native) authentication and onboarding flows for an
-          AI-native travel agent.</p>
-          <p class="stack"><span>Stack</span>React, React Native, Python, Postgres, OpenAI</p>
-        </div>
-      </li>
-      <li>
-        <span class="when">2022 - 2023</span>
-        <div>
-          <strong>Collective</strong> <span class="title">Staff Software Engineer, promoted to Senior Engineering Manager</span>
-          <p>Promoted to Senior Engineering Manager of the platform team within about six months,
-          after delivering front-end refactors, Django/DRF standards, and CI/CD pipelines. Ran the
-          team through SOC 2 pre-compliance, a 2FA rollout, and an auth-system overhaul.</p>
-        </div>
-      </li>
-      <li>
-        <span class="when">2020 - 2021</span>
-        <div>
-          <strong>Jasper Health (Redesign Health)</strong> <span class="title">Founding Head of Engineering</span>
-          <p>First engineering hire at a cancer-care navigation startup. Built the greenfield
-          stack solo, then hired and grew the team to five engineers. The platform reached 10K+
-          users in its first year and powered MSK Direct at Memorial Sloan Kettering.</p>
-          <p class="stack"><span>Stack</span>React, Next.js, GraphQL, Django, PostgreSQL</p>
-        </div>
-      </li>
-      <li>
-        <span class="when">2011 - 2019</span>
-        <div>
-          <strong>Udemy</strong> <span class="title">Founding Software Engineer #3 to Software Architect</span>
-          <p>Joined as engineer #3. Led the two-year incremental migration of the PHP monolith to
-          Python/Django, staffed by 30% of engineering: it ended with 88% test coverage and 36%
-          less code while features kept shipping, and 60-80+ new engineers were onboarded onto the
-          new stack. Then led the company-wide jQuery/Angular to React + MobX re-architecture,
-          coordinating all engineering teams over about two years. Managed the student and
-          instructor experience teams as Senior Engineering Manager from 2014 to 2016.</p>
-          <p class="stack"><span>Stack</span>Python, Django, React, MobX, Webpack</p>
-        </div>
-      </li>
-    </ol>
+  <section class="now" aria-labelledby="now">
+    <h2 id="now">Now</h2>
+    <p class="measure">Building self-hosted AI infrastructure: the plumbing that lets a company run
+    language models and agents on its own hardware. MCP (Model Context Protocol) servers, model
+    serving with vLLM and Ollama, speech pipelines, and agents on the Claude Agent SDK.</p>
   </section>
 
-  <section aria-labelledby="education">
-    <h2 id="education">Education</h2>
-    <ul class="edu">
-      <li><strong>M.S. Computer Engineering</strong>, Bilkent University, 2012.
-        <span>Thesis published at ISCIS 2012 (Springer).</span></li>
-      <li><strong>B.S. Computer Engineering</strong>, METU (Middle East Technical University), 2009.</li>
-    </ul>
+  <section aria-labelledby="where">
+    <h2 id="where">Where I have been</h2>
+    <ol class="timeline">
+      <li><span class="when">2025 - Present</span><span><strong>Independent Engineer</strong>, AI infrastructure and tooling</span></li>
+      <li><span class="when">2024 - 2025</span><span><strong>Abridge</strong>, Staff Software Engineer, Foundations</span></li>
+      <li><span class="when">2024</span><span><strong>Woven</strong> (Everyday Agents), Founding Staff Software Engineer</span></li>
+      <li><span class="when">2022 - 2023</span><span><strong>Collective</strong>, Staff Software Engineer, promoted to Senior Engineering Manager</span></li>
+      <li><span class="when">2020 - 2021</span><span><strong>Jasper Health</strong> (Redesign Health), Founding Head of Engineering</span></li>
+      <li><span class="when">2011 - 2019</span><span><strong>Udemy</strong>, engineer #3 to Software Architect, led two company-wide platform rewrites</span></li>
+    </ol>
   </section>
 
   <section class="contact" aria-labelledby="contact">
@@ -329,7 +261,7 @@
     <p class="big measure">The fastest way to reach me is email:
       <a href="mailto:cansinyildiz@gmail.com">cansinyildiz@gmail.com</a></p>
     <nav class="links" aria-label="Profiles">
-      <a href="https://www.linkedin.com/in/cansin">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/cansin">Full history on LinkedIn</a>
       <a href="https://github.com/cansin">GitHub</a>
       <a href="https://medium.com/@cansinyildiz">Medium</a>
     </nav>
